@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 import pylab
 
-input_filename = "Video4_2.mp4"
-output_filename = "Y_Data_4_2.csv"
+input_filename = "Video4_1.mp4"
+output_filename = "Y_Data_4_1.csv"
 
 def all_square_pixels(row, col, square_h, square_w):
     # Every pixel for a single "square"
