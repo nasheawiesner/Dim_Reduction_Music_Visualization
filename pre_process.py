@@ -25,7 +25,7 @@ def call_feed_forward(inputArray, expectedOutputArray):
     hidden_layer_amount = 1
     hidden_nodes_amount = 100
     output_nodes_amount = 1
-    epocs = 100
+    epocs = 10
     activation_type = "s"  # set "s" for sig;
 
     feedforward = FF(inputArray, expectedOutputArray, hidden_nodes_amount, output_nodes_amount, activation_type)
@@ -68,17 +68,17 @@ def call_feed_forward(inputArray, expectedOutputArray):
     print("Accuracy: ", (accuracy * 100))
     print('Average testing error=%.3f' % (test_sum_error/len(test_x)))
     print("Total testing error=%.3f" % (test_sum_error))
-    print('Predicted outputs=', predicted_outputs)
-    print('Expected outputs=', expected_outputs)
+    #print('Predicted outputs=', predicted_outputs)
+    #print('Expected outputs=', expected_outputs)
 
 orig_stdout = sys.stdout
-f = open('out.txt', 'w')
+f = open('isomap_out.txt', 'w')
 sys.stdout = f
-features = parse('./data/X_Data.csv')
-#reduced_x = decompose(features)         #pca
+features = parse('./data/X_Data_4.csv')
+#reduced_x = decompose(features, 7)         #pca
 #reduced_x = select_random(features, 7)   #random subset of values
-reduced_x = embed(features, 10)           #isomap
-labels = parse('./data/Y_Data.csv')
+reduced_x = embed(features, 7)           #isomap
+labels = parse('./data/Y_Data_4_1.csv')
 for item in range(len(labels[0])):
     one_output = []
     for y in labels:

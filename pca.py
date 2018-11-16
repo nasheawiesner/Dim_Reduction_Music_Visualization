@@ -1,8 +1,8 @@
 import numpy as np
 from sklearn.decomposition import PCA
 
-def decompose(x):
-    pca = PCA(n_components=7)
+def decompose(x,comp):
+    pca = PCA(n_components=comp)
     pca.fit(x)
 
     print(pca.explained_variance_ratio_)
