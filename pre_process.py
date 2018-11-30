@@ -4,6 +4,7 @@ from feed_forward import *
 from pca import *
 from random_features import *
 from isomap import *
+from nmf import *
 import csv
 import sys
 
@@ -23,9 +24,9 @@ def parse(file):
 
 def call_feed_forward(inputArray, expectedOutputArray):
     hidden_layer_amount = 1
-    hidden_nodes_amount = 100
+    hidden_nodes_amount = 50
     output_nodes_amount = 1
-    epocs = 10
+    epocs = 50
     activation_type = "s"  # set "s" for sig;
 
     feedforward = FF(inputArray, expectedOutputArray, hidden_nodes_amount, output_nodes_amount, activation_type)
@@ -70,21 +71,22 @@ def call_feed_forward(inputArray, expectedOutputArray):
     print("Total testing error=%.3f" % (test_sum_error))
     #print('Predicted outputs=', predicted_outputs)
     #print('Expected outputs=', expected_outputs)
-
+print("Full ", 100)
 orig_stdout = sys.stdout
-f = open('isomap_out.txt', 'w')
+f = open('full_100_out.txt', 'w')
 sys.stdout = f
 features = parse('./data/X_Data_4.csv')
-#reduced_x = decompose(features, 7)         #pca
-#reduced_x = select_random(features, 7)   #random subset of values
-reduced_x = embed(features, 7)           #isomap
+#reduced_x = decompose(features, 50)         #pca
+#reduced_x = select_random(features, 50)   #random subset of values
+#reduced_x = embed(features, 50)           #isomap
+#reduced_x = decompose(features, 50)        #nmf
 labels = parse('./data/Y_Data_4_1.csv')
 for item in range(len(labels[0])):
     one_output = []
     for y in labels:
         one_output.append([y[item]])
     print("Outputs on label:", item)
-    call_feed_forward(reduced_x, one_output)
+    call_feed_forward(features, one_output)
 
 sys.stdout = orig_stdout
 f.close()
