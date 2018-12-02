@@ -1,14 +1,10 @@
-# Script to take image predictions (Y_Data) and converts them into a video
+# Script to take image predictions (Y_Data) and convert them into a video
 # for CSCI 550 final project
-# cd /Users/JeremyTate/Documents/School/CSCI/CSCI\ 550/Final\ Project/
-# python Video_Post_Process.py
-
-# TODO: find out how to include audio
-import numpy as np
+import cv2
 from numpy import genfromtxt
 from PIL import Image
 from scipy.misc import imsave
-import cv2
+import numpy as np
 import os
 import shutil
 import soundfile as sf
@@ -40,12 +36,12 @@ if os.path.isdir(image_folder):
 os.mkdir(image_folder)
 
 # Importing Y data
-filename = 'Y_Data_4_1.csv'
+filename = 'Post_Y_Data.csv'
+audio_name = 'PostAudio.wav'
+vid_name = 'Output.mp4'
 Y_Data = genfromtxt(filename, delimiter=',')
 Y_Data = np.delete(Y_Data, 0, 0) # Remove colnames
-# for speed temporarily change num_samples to 10
-# num_samples = len(Y_Data)
-num_samples = 10
+num_samples = len(Y_Data)
 num_rows = 2
 num_cols = 2
 img_h = 720
@@ -53,14 +49,11 @@ img_w = 1280
 square_h = float(img_h) / num_rows / 2
 square_w = float(img_w) / num_cols / 2
 filename = os.path.join(os.getcwd(), image_folder)
-vid_name = 'Output.mp4'
-audio_name = 'Audio1.wav'
 
 # Import audio to get length of new song
 f = sf.SoundFile(audio_name)
 duration = len(f) / f.samplerate # duration in seconds
-# frame_rate = num_samples / duration
-frame_rate = 10
+frame_rate = num_samples / duration
 
 # Create intermediate matrix where data is oriented where relative
 # pixels will be
@@ -94,13 +87,6 @@ video = cv2.VideoWriter(vid_name, -1, frame_rate, (img_w, img_h))
 for image in images:
     video.write(cv2.imread(os.path.join(image_folder, image)))
 video.release()
-
-# # Opencv does not support audio so moviepy editor will handle
-# # combining the audio and video
-# video = mp.VideoFileClip(vid_name)
-# audio = mp.AudioFileClip(audio_name)
-# video2 = video.set_audio(audio)
-# video2.write_videofile('Output2.mp4')
 
 # Delete temporary image directory and temporary video
 shutil.rmtree(image_folder)

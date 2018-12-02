@@ -1,0 +1,170 @@
+Outputs on label: 0
+>epoch=0, average training error=-3.626
+>epoch=1, average training error=0.281
+>epoch=2, average training error=0.710
+>epoch=3, average training error=0.756
+>epoch=4, average training error=0.760
+>epoch=5, average training error=0.760
+>epoch=6, average training error=0.758
+>epoch=7, average training error=0.757
+>epoch=8, average training error=0.755
+>epoch=9, average training error=0.753
+Average testing error=1.021
+Total testing error=1482.096
+Squared Error=2196607.820
+Outputs on label: 1
+>epoch=0, average training error=12.448
+>epoch=1, average training error=1.949
+>epoch=2, average training error=0.855
+>epoch=3, average training error=0.741
+>epoch=4, average training error=0.727
+>epoch=5, average training error=0.724
+>epoch=6, average training error=0.724
+>epoch=7, average training error=0.727
+>epoch=8, average training error=0.728
+>epoch=9, average training error=0.719
+Average testing error=8.026
+Total testing error=11645.114
+Squared Error=135608669.607
+Outputs on label: 2
+>epoch=0, average training error=11.512
+>epoch=1, average training error=1.637
+>epoch=2, average training error=0.667
+>epoch=3, average training error=0.575
+>epoch=4, average training error=0.577
+>epoch=5, average training error=0.578
+>epoch=6, average training error=0.560
+>epoch=7, average training error=0.545
+>epoch=8, average training error=0.532
+>epoch=9, average training error=0.517
+Average testing error=7.712
+Total testing error=11189.631
+Squared Error=125207835.311
+Outputs on label: 3
+>epoch=0, average training error=20.674
+>epoch=1, average training error=2.296
+>epoch=2, average training error=0.544
+>epoch=3, average training error=0.382
+>epoch=4, average training error=0.367
+>epoch=5, average training error=0.365
+>epoch=6, average training error=0.365
+>epoch=7, average training error=0.365
+>epoch=8, average training error=0.365
+>epoch=9, average training error=0.364
+Average testing error=18.774
+Total testing error=27240.663
+Squared Error=742053714.730
+Outputs on label: 4
+>epoch=0, average training error=13.689
+>epoch=1, average training error=1.510
+>epoch=2, average training error=0.325
+>epoch=3, average training error=0.212
+>epoch=4, average training error=0.201
+>epoch=5, average training error=0.201
+>epoch=6, average training error=0.201
+>epoch=7, average training error=0.202
+>epoch=8, average training error=0.202
+>epoch=9, average training error=0.202
+Average testing error=20.785
+Total testing error=30158.978
+Squared Error=909563930.954
+Outputs on label: 5
+>epoch=0, average training error=17.993
+>epoch=1, average training error=2.241
+>epoch=2, average training error=0.707
+>epoch=3, average training error=0.558
+>epoch=4, average training error=0.542
+>epoch=5, average training error=0.540
+>epoch=6, average training error=0.543
+>epoch=7, average training error=0.545
+>epoch=8, average training error=0.539
+>epoch=9, average training error=0.527
+Average testing error=10.515
+Total testing error=15257.291
+Squared Error=232784915.687
+Outputs on label: 6
+>epoch=0, average training error=17.975
+>epoch=1, average training error=2.091
+>epoch=2, average training error=0.521
+>epoch=3, average training error=0.370
+>epoch=4, average training error=0.356
+>epoch=5, average training error=0.358
+>epoch=6, average training error=0.360
+>epoch=7, average training error=0.349
+>epoch=8, average training error=0.329
+>epoch=9, average training error=0.309
+Average testing error=13.146
+Total testing error=19074.439
+Squared Error=363834206.498
+Outputs on label: 7
+>epoch=0, average training error=12.859
+>epoch=1, average training error=1.574
+>epoch=2, average training error=0.449
+>epoch=3, average training error=0.338
+>epoch=4, average training error=0.328
+>epoch=5, average training error=0.327
+>epoch=6, average training error=0.327
+>epoch=7, average training error=0.327
+>epoch=8, average training error=0.327
+>epoch=9, average training error=0.328
+Average testing error=18.723
+Total testing error=27167.353
+Squared Error=738065083.541
+Outputs on label: 8
+>epoch=0, average training error=21.043
+>epoch=1, average training error=2.219
+>epoch=2, average training error=0.402
+>epoch=3, average training error=0.232
+>epoch=4, average training error=0.217
+>epoch=5, average training error=0.217
+>epoch=6, average training error=0.218
+>epoch=7, average training error=0.219
+>epoch=8, average training error=0.220
+>epoch=9, average training error=0.219
+Average testing error=22.085
+Total testing error=32045.021
+Squared Error=1026883348.464
+Outputs on label: 9
+>epoch=0, average training error=15.221
+>epoch=1, average training error=2.082
+>epoch=2, average training error=0.800
+>epoch=3, average training error=0.677
+>epoch=4, average training error=0.671
+>epoch=5, average training error=0.688
+>epoch=6, average training error=0.687
+>epoch=7, average training error=0.663
+>epoch=8, average training error=0.638
+>epoch=9, average training error=0.614
+Average testing error=7.925
+Total testing error=11498.638
+Squared Error=132218673.737
+Outputs on label: 10
+>epoch=0, average training error=14.274
+>epoch=1, average training error=1.810
+>epoch=2, average training error=0.562
+>epoch=3, average training error=0.439
+>epoch=4, average training error=0.426
+>epoch=5, average training error=0.424
+>epoch=6, average training error=0.423
+>epoch=7, average training error=0.422
+>epoch=8, average training error=0.418
+>epoch=9, average training error=0.411
+Average testing error=12.415
+Total testing error=18014.173
+Squared Error=324510418.173
+Outputs on label: 11
+>epoch=0, average training error=-0.871
+>epoch=1, average training error=0.577
+>epoch=2, average training error=0.725
+>epoch=3, average training error=0.739
+>epoch=4, average training error=0.740
+>epoch=5, average training error=0.739
+>epoch=6, average training error=0.737
+>epoch=7, average training error=0.734
+>epoch=8, average training error=0.731
+>epoch=9, average training error=0.728
+Average testing error=1.230
+Total testing error=1785.005
+Squared Error=3186244.435
+Average Squared Error:  394676137.413
+Root Average Squared Error:  19866.457595979962
