@@ -1,4 +1,4 @@
-Outputs on label: 0
+19866Outputs on label: 0
 >epoch=0, average training error=-3.626
 >epoch=1, average training error=0.281
 >epoch=2, average training error=0.710

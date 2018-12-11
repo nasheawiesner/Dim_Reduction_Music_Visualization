@@ -2,6 +2,9 @@ import random
 from math import exp
 
 import numpy
+"Class that implements a simple feed forward network with backprop given " \
+"an input array, expected output array number of hidden layers, number of hidden nodes, " \
+"and activation function."
 
 class FF:
     def __init__(self, inputs, expected, num_of_hidden, num_of_outs, activation_type):

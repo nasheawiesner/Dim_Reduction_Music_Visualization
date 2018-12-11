@@ -1,5 +1,8 @@
 import random
-
+"A naive dimensionality reduction " \
+"technique which randomly chooses a " \
+"given number of real-valued feature" \
+"vectors from the original dataset."
 def select_random(x, number):
     random_features = random.sample(range(len(x[0]) + 1), number)
     subset = []
